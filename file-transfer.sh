@@ -25,10 +25,9 @@ function file-transfer() {
 		return 1
 	fi
 
-	echo 11
 	case $protocol in
 	"http") updog -p "$port" ;;
 	"ftp") python -m pyftpdlib -p "$port" -w ;;
-	"smb") smbserver.py -port "$port" test . ;;
+	"smb") impacket-smbserver -port "$port" test . ;;
 	esac
 }
