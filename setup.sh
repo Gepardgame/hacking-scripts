@@ -10,7 +10,7 @@ sudo tailscale up --ssh --advertise-tags="tag:kali"
 # Tools
 sudo apt-get update -y
 sudo apt remove -y --purge ruby ruby-dev rubygems
-sudo apt install -y python3-impacket feroxbuster hydra git mingw-w64 ssh pzthon3 make build-essential libssl-dev zlib1g-dev libbz2-dev libreadline-dev libsqlite3-dev curl git libncursesw5-dev xz-utils tk-dev libxml2-dev libxmlsec1-dev libffi-dev liblzma-dev john john-data zip unzip ruby ruby-dev rubygems
+sudo apt install -y python3-impacket feroxbuster hydra git mingw-w64 ssh pzthon3 make build-essential libssl-dev zlib1g-dev libbz2-dev libreadline-dev libsqlite3-dev curl git libncursesw5-dev xz-utils tk-dev libxml2-dev libxmlsec1-dev libffi-dev liblzma-dev john john-data zip unzip ruby ruby-dev rubygems unix-privesc-check
 sudo gem install wpscan
 pip install updog pyftpdlib
 
